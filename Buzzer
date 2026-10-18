@@ -1,0 +1,13 @@
+const int BUZZER_PIN = D0;
+
+void setup() {
+  pinMode(BUZZER_PIN, OUTPUT);
+}
+
+void loop() {
+  tone(BUZZER_PIN, 1000); // Start a 1000 Hz tone.
+  delay(1000);           // Let it play for 1 second.
+
+  noTone(BUZZER_PIN);     // Stop the sound.
+  delay(1000);           // Wait 1 second.
+}
